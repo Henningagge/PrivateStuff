@@ -23,7 +23,7 @@ class LinearRegression:
             sq_errorshowl = sq_errorshowl + sq_errors[numbers]
         
         MSE = sq_errorshowl * 1/N
-        if counter > 7:
+        if counter > 10:
             print(MSE)
             return
         sum_errors0 = 0
@@ -41,4 +41,4 @@ class LinearRegression:
         counter = counter+1
         LinearRegression.fit(x, y, a0_new, a1_new, counter)
 
-LinearRegression.fit([1, 2, 3, 4], [2, 4, 5, 4], 0.0, 0.0, 0)
+LinearRegression.fit([1], [1], 0.0, 0.0, 0)
