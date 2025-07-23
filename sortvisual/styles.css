@@ -1,0 +1,18 @@
+.bar {
+  width: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  position: relative;
+  background-color: black;
+  color: red;
+}
+#sortcontainer {
+  display: flex;
+  transform: rotateX(180deg);
+}
+.start {
+  margin-top: 10px;
+}
+.sliderdiv {
+  display: flex;
+}

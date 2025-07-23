@@ -1,9 +1,8 @@
-def visual(arr):
-    print("hello")
+from creatgraph import *
+import time
 
-
-
-def selectSort(arr, n):
+def selectSort(arr, n, sleep):
+    generate(arr)
     if n >= len(arr) -1:
         print(arr)
         return
@@ -29,7 +28,8 @@ def selectSort(arr, n):
     
     n = n + 1
     print(arr)
-    selectSort(arr, n)
+    time.sleep(sleep)
+    selectSort(arr, n, sleep)
 
 
-selectSort([5,8,2,7,1,3,9,0,-1], 0)
+selectSort([5,8,2,7,1,3,9,13,11], 0, 2)
