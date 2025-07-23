@@ -33,8 +33,7 @@ def readdata(conn):
             for row in rows:
                 dataarr.append(row)
                 print(row)
-            print(dataarr)
-            print("helllllllo")
+            
             return dataarr
     except pymysql.Error as e:
         print(f"fehler {e}")
