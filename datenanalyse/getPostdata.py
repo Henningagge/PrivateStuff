@@ -25,7 +25,7 @@ def readdata(conn):
     dataarr = []
     try:
         with conn.cursor() as cursor:
-            sql = "SELECT * FROM `timepattern`"
+            sql = "SELECT * FROM `Kundenbestellungen`"
             cursor.execute(sql)
 
             rows = cursor.fetchall()
